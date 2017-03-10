@@ -10,12 +10,26 @@ Come and ask any questions on the crowdsourcing platform!
    </div>
 
   <div id="question-box" class="container-fluid">
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
      {{question-tile question=question}}
   {{/each}}
 
   <br>
   {{new-question saveQuestion2="saveQuestion3"}}
  </div>
+
+ <!-- All answers -->
+
+ <h2> All Answers </h2>
+
+<ul>
+  {{#each model.reviews as |review|}}
+    <li>{{review.content}}  <br>
+      - by {{review.author}}</li>
+  {{/each}}
+</ul>
+
+
+
  </div>
  </div>
