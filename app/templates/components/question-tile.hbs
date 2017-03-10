@@ -1,8 +1,8 @@
 
+{{#link-to 'question' question.id}}
 <p class="index-question"> Q: {{question.question}} </p>
 <p class="index-author">A: {{question.author}}  </p>
-{{update-question question=question update="update"}}
-<button {{action 'delete' question}}>Delete</button>
-<br>
+{{/link-to}}
+
 <br>
 <br>
