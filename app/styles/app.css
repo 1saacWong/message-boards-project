@@ -18,3 +18,12 @@
 .navbar-header{
   color: black;
 }
+
+img{ max-height: 300px;
+     width: auto;
+
+}
+
+.author{
+  font-weight:bold;
+}
