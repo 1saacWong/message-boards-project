@@ -1,0 +1,20 @@
+<div id="belownav">
+  <div class="container-fluid">
+    <div class="container-fluid">
+<h1> カイトウ 解答! </h1>
+
+Come and ask any questions on the crowdsourcing platform!
+<br>
+<br>
+
+   </div>
+
+  <div id="question-box" class="container-fluid">
+  {{#each model as |question|}}
+     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+  {{/each}}
+
+  {{new-question saveQuestion2="saveQuestion3"}}
+ </div>
+ </div>
+ </div>
