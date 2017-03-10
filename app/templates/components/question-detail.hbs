@@ -1,0 +1,10 @@
+{{#link-to 'question' question.id}}
+<p>{{question.author}}</p>
+<p>{{question.question}}</p>
+<p>{{question.notes}}</p>
+{{/link-to}}
+
+<br>
+<p><img src={{question.image}} alt={{question.type}}></p>
+
+<button {{action 'delete' question}}>Delete</button>

@@ -11,9 +11,10 @@ Come and ask any questions on the crowdsourcing platform!
 
   <div id="question-box" class="container-fluid">
   {{#each model as |question|}}
-     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+     {{question-tile question=question}}
   {{/each}}
 
+  <br>
   {{new-question saveQuestion2="saveQuestion3"}}
  </div>
  </div>
